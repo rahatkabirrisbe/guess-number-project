@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess a Number!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <h1>Guess a number</h1> -->
+
+    <!-- <form>
+      <input type="number" />
+      <button type="submit">Guess Number</button>
+    </form> -->
+    <div class="head">
+      <div class="container">
+        <div class="heading">
+          <h1>🎲 123...</h1>
+          <h2>Guess A Number Game!</h2>
+          <p>
+            play games by guessing a number
+            <!-- <span class="number-range"
+              >0 - <span id="number-want-play">10</span></span
+            > -->
+          </p>
+          <div class="rules">
+            <li>default :</li>
+            <li>
+              between <span class="number-range low-guess">0</span> -
+              <span class="number-range max-guess">10</span>
+            </li>
+            <li>
+              maximum playing time is
+              <span class="number-range max-limit">0</span> & you have left
+              <span class="number-range max-play-limit">0</span>
+            </li>
+            <li>input must be a <span class="number-range">number</span></li>
+          </div>
+        </div>
+        <div class="game-part">
+          <div class="making-score">
+            <form>
+              <div class="number">
+                <input
+                  type="number"
+                  name="guess-number"
+                  autocomplete="off"
+                  required
+                />
+                <label for="guess-number" class="label-guess-number">
+                  <span class="content-guess-number">Enter Guess Number</span>
+                </label>
+              </div>
+              <!-- <p>*Input must be a Number!</p>
+              <p>*Default guessing number 0 - 10!</p>
+              <p>*Maximum playing time is 3!</p> -->
+              <!-- <button type="submit">Guess Number</button> -->
+            </form>
+          </div>
+          <div class="score-board">
+            <h2>Score</h2>
+            <p>Number of Correct Guesses : <span id="correct-times">0</span></p>
+            <p>Number of Wrong Guesses : <span id="wrong-times">0</span></p>
+          </div>
+        </div>
+        <div class="history">
+          <button class="btn">Play Again</button>
+          <h1>Guessing History</h1>
+          <ul>
+            <!-- <li>You Entered high</li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
