@@ -143,6 +143,7 @@ body {
   padding: 15px;
   width: 50%;
   margin: 0 auto;
+  cursor: pointer;
 }
 .history ul li .success {
   background-color: rgb(1, 180, 45);
@@ -163,4 +164,20 @@ body {
 .rules li:first-child {
   text-decoration: underline;
   font-weight: bold;
+}
+.rules li:last-of-type {
+  margin-bottom: 10px;
+}
+.rules p {
+  text-align: left;
+  display: inline;
+}
+.btn-set-game {
+  background-color: #5fa8d3;
+  color: white;
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
 }
